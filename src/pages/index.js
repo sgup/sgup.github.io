@@ -4,6 +4,17 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCamera } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons"
+
 import "./mystyles.scss"
 
 const IndexPage = () => (
@@ -25,7 +36,7 @@ const IndexPage = () => (
             <div className="columns is-multiline has-text-centered">
               <div className="column is-one-third">
                 <span class="icon is-medium">
-                  <i class="far fa-lg fa-envelope"></i>
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </span>{" "}
                 <a href="mailto:hey@shridhargupta.com">
                   <b className="is-link is-size-4 has-underline underline-blue">
@@ -36,7 +47,7 @@ const IndexPage = () => (
 
               <div className="column is-one-third">
                 <span class="icon is-medium">
-                  <i class="fab fa-lg fa-linkedin"></i>
+                  <FontAwesomeIcon icon={faLinkedin} />
                 </span>{" "}
                 <a href="https://www.linkedin.com/in/shridhargupta/">
                   <b className="is-link is-size-4 has-underline underline-blue">
@@ -47,7 +58,7 @@ const IndexPage = () => (
 
               <div className="column is-one-third">
                 <span class="icon is-medium">
-                  <i class="fab fa-lg fa-github"></i>
+                  <FontAwesomeIcon icon={faGithub} />
                 </span>{" "}
                 <a href="https://github.com/sgup/">
                   <b className="is-link is-size-4 has-underline underline-blue">
@@ -58,7 +69,7 @@ const IndexPage = () => (
 
               <div className="column is-one-third">
                 <span class="icon is-medium">
-                  <i class="fab fa-lg fa-twitter"></i>
+                  <FontAwesomeIcon icon={faTwitter} />
                 </span>{" "}
                 <a href="https://twitter.com/shridhargupta">
                   <b className="is-link is-size-4 has-underline underline-blue">
@@ -69,7 +80,7 @@ const IndexPage = () => (
 
               <div className="column is-one-third">
                 <span class="icon is-medium">
-                  <i class="fas fa-lg fa-camera"></i>
+                  <FontAwesomeIcon icon={faCamera} />
                 </span>{" "}
                 <a href="http://shridhartakesphotos.com">
                   <b className="is-link is-size-4 has-underline underline-blue">
@@ -80,7 +91,7 @@ const IndexPage = () => (
 
               <div className="column is-one-third">
                 <span class="icon is-medium">
-                  <i class="fab fa-lg fa-instagram"></i>
+                  <FontAwesomeIcon icon={faInstagram} />
                 </span>{" "}
                 <a href="https://instagram.com/shridhartakesphotos">
                   <b className="is-link is-size-4 has-underline underline-blue">
