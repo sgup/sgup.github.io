@@ -8,6 +8,7 @@ $weight-normal: 500;
 $weight-semibold: 700;
 $body-line-height: 1.8;
 $text: hsl(0, 0%, 4%);
+$primary: #5978ff;
 
 .text-logo {
   text-decoration: none;
@@ -43,6 +44,13 @@ $text: hsl(0, 0%, 4%);
 
   &:hover {
     padding-bottom: 5px;
+  }
+}
+
+.screenshot {
+  transition: transform 0.15s;
+  &:hover {
+    transform: scale(1.02);
   }
 }
 

@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 import "./mystyles.scss"
+import fitloopScreenshot from "../images/fitloop-screenshot.png"
 
 const IndexPage = () => (
   <Layout>
@@ -40,7 +41,7 @@ const IndexPage = () => (
                 </span>{" "}
                 <a href="mailto:hey@shridhargupta.com">
                   <b className="is-link is-size-4 has-underline underline-blue">
-                    hire me
+                    contact
                   </b>
                 </a>
               </div>
@@ -105,25 +106,32 @@ const IndexPage = () => (
       </div>
     </section>
 
-    {/*<section class="section">
+    <hr />
+
+    <section class="section">
       <div className="container">
-        <h2 className="is-size-2 has-text-centered">Work</h2>
-        <div className="columns">
-          <div className="column">
-            <img src="https://placeimg.com/640/480/any" />
-          </div>
-          <div className="column">
-            <img src="https://placeimg.com/640/480/any" />
-          </div>
-          <div className="column">
-            <img src="https://placeimg.com/640/480/any" />
-          </div>
-          <div className="column">
-            <img src="https://placeimg.com/640/480/any" />
-          </div>
+        <h2 className="title">
+          Fitloop <span className="tag is-primary">Solo Maker</span>
+        </h2>
+        <h3 className="subtitle">
+          A comprehensive calisthenics training platform &mdash; workout
+          tracking, routines, videos, and social features built in.
+        </h3>
+        <div className="tags">
+          <span className="tag is-dark is-medium">Meteor</span>
+          <span className="tag is-dark is-medium">Node</span>
+          <span className="tag is-dark is-medium">Apollo</span>
+          <span className="tag is-dark is-medium">GraphQL</span>
+          <span className="tag is-dark is-medium">React</span>
+          <span className="tag is-dark is-medium">MongoDB</span>
+          <span className="tag is-dark is-medium">React Native</span>
+          <span className="tag is-dark is-medium">Bootstrap 4</span>
         </div>
+        <a href="https://fitloop.co">
+          <img src={fitloopScreenshot} className="screenshot" />
+        </a>
       </div>
-    </section>*/}
+    </section>
 
     {/*<section class="section">
       <div className="container has-text-centered">
