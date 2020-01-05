@@ -216,18 +216,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section class="section">
-      <div className="container has-text-centered">
-        <h2 className="section-title is-size-4 has-underline underline-purple">Technology Experience</h2>
-        <p className="is-size-4">
-          ES10, React, React Native, Node.js, MongoDB, Apollo/GraphQL
-        </p>
-        <p>
-          <b>Also:</b> Ruby on Rails, Postgres, Meteor, Express, Yarn, REST,
-          SASS, Styled Components & more.
-        </p>
-      </div>
-    </section>
+    <hr/>
 
     <section class="section">
       <div className="columns is-multiline has-text-centered">
@@ -298,6 +287,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+
   </Layout>
 )
 
