@@ -42,11 +42,11 @@ const IndexPage = () => (
                   href="https://twitter.com/shridhargupta"
                   className="is-link has-underline underline-green"
                 >
-                  Shridhar Gupta
+                  Shridhar
                 </a>
               </b>.
             </p>
-            <p className="is-size-4 is-size-5-mobile">
+            <p className="subtitle is-size-4 is-size-5-mobile">
               I build modern Web & Mobile Apps with a focus on great UX. I'm currently making{' '}
               <b>
                 <a

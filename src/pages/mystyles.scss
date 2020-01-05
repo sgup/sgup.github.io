@@ -16,6 +16,17 @@ b {
 
 .jumbotron {
   text-align: center;
+
+  p.title {
+    margin-bottom: 2.5rem;
+  }
+
+  p.subtitle {
+    color: #222;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
   @media(min-width: 768px) {
     text-align: left;
     .columns {
