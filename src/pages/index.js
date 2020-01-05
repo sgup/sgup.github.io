@@ -16,7 +16,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 import "./mystyles.scss"
-import fitloopScreenshot from "../images/fitloop-screenshot.png"
+import fitloopScreenshot from "../images/screely-fitloop.png"
+import dataquestScreenshot from "../images/screely-dataquest.png"
+import couchsurfingScreenshot from "../images/screely-couchsurfing.png"
+import streetgymsScreenshot from "../images/screely-streetgyms.png"
+import mirohealthScreenshot from "../images/screely-mirohealth.png"
+
+
+
+import projects from './projects.json'
 
 const IndexPage = () => (
   <Layout>
@@ -24,9 +32,9 @@ const IndexPage = () => (
 
     <section>
       <div className="jumbotron container">
-        <div class="columns">
+        <div className="columns">
 
-          <div class="column image-column is-1 is-offset-1">
+          <div className="column image-column is-1 is-offset-1">
             <div style={{paddingBottom: '20px'}}>
               <figure className="image is-128x128 is-inline-block">
                 <img className="is-rounded" src="https://shridharstorage.s3.amazonaws.com/profilepics/shridhargupta-cropped.jpeg" />
@@ -34,7 +42,7 @@ const IndexPage = () => (
             </div>
           </div>
 
-          <div class="column is-8 is-offset-1">
+          <div className="column is-8 is-offset-1">
             <p className="title is-size-2 is-size-3-mobile">
               Hi, I’m{" "}
               <b>
@@ -71,15 +79,15 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section class="section quotes">
-      <div class="columns is-multiline">
-        <div class="column is-6">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">
+    <section className="section quotes">
+      <div className="columns is-multiline">
+        <div className="column is-6">
+          <div className="card">
+            <div className="card-content">
+              <p className="title">
                 “Shridhar was a <b>pleasure to work with</b> and was articulate in his discussions of ideas and projects. <b>He is a fast learner</b>, who is always improving his abilities and sharping his skills. I would work with him again.”
               </p>
-              <p class="subtitle">
+              <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
                   <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQE3NN8uMmo47w/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=WKxnrMd4TGMry8e1msG0cyFDmht6d63XfZSa4rRqfuY" />
                 </figure>
@@ -91,13 +99,13 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        <div class="column is-6">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">
+        <div className="column is-6">
+          <div className="card">
+            <div className="card-content">
+              <p className="title">
                 “Shridhar was instrumental in a successful re-design […]. Shridhar’s excellent communication and UI expertise helped improve upon the user experience of the site. Shridhar <b>consistently delivered quality work on-time and to spec.</b>”
               </p>
-              <p class="subtitle">
+              <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
                   <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQHgFIHQ3x0Zgw/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=S7g5ZNbM9sUNTRHM0ntby55CbTPpEvjTgbwqnJ0lAqg" />
                 </figure>
@@ -109,13 +117,13 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        <div class="column is-6">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">
+        <div className="column is-6">
+          <div className="card">
+            <div className="card-content">
+              <p className="title">
                 “I couldn’t speak more highly of his work ethic and ability to deliver on results. He is collaborative and easy to work with […] he led various projects from start to completion that <b>made a major impact on our company’s core metrics.</b>”
               </p>
-              <p class="subtitle">
+              <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
                   <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQG_5cQjzpwUgA/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=hhZAkLdFzAmvblL4p7gu3qaDsi7thaRaP4ni4616kF8" />
                 </figure>
@@ -127,13 +135,13 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        <div class="column is-6">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">
+        <div className="column is-6">
+          <div className="card">
+            <div className="card-content">
+              <p className="title">
                 “I’ve been consistently impressed by his <b>attention to detail</b>, his eagerness and willingness to learn new skills, his <b>empathy towards users</b>, and his dedication to incorporating the company's mission and goals into every project he's assigned. I'd be lucky to work alongside him again!”
               </p>
-              <p class="subtitle">
+              <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
                   <img className="is-rounded" src="https://media.licdn.com/dms/image/C5603AQGdKaOrTXnwWQ/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=WYi65LagZBARXI3r90TQ1My_Fuaqf1LrtbkRyUJ7wRc" />
                 </figure>
@@ -145,13 +153,13 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        <div class="column is-6">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">
+        <div className="column is-6">
+          <div className="card">
+            <div className="card-content">
+              <p className="title">
                 “Shridhar helped us build an internal tool to manage customer data. He's a great collaborator -- both creatively, and in communicating progress throughout a project. <b>Working with him was straightforward and efficient</b>, and his joining us in the office made everything go super smoothly. I'd definitely work with him again!”
               </p>
-              <p class="subtitle">
+              <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
                   <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQFeJQCxXqblvw/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=9fxMAotVgtCDQVAKq3f0W-rWOq2gYAxcp8zZBnv6LfU" />
                 </figure>
@@ -163,13 +171,13 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-        <div class="column is-6">
-          <div class="card">
-            <div class="card-content">
-              <p class="title">
+        <div className="column is-6">
+          <div className="card">
+            <div className="card-content">
+              <p className="title">
                 “Shridhar has impressed me with his <b>ability to take feedback, ask questions, and improve</b> his process over time. We’ve seen a steady increase in his code quality and tests over time. <b>He is a team player</b>, who was well liked by all members of the Dataquest team. While at Dataquest he worked mostly with React and GraphQL.”
               </p>
-              <p class="subtitle">
+              <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
                   <img className="is-rounded" src="https://i0.wp.com/softwareengineeringdaily.com/wp-content/uploads/2016/01/srini-kadamati.jpg?w=175&ssl=1" />
                 </figure>
@@ -185,43 +193,43 @@ const IndexPage = () => (
 
     </section>
 
-    <section class="section">
-
+    <div className="mt-1">
       <div className="has-text-centered">
         <h2 className="section-title is-size-3 has-underline underline-purple">Work</h2>
       </div>
+    </div>
 
+    <section className="section work">
+      <div className="columns is-multiline">
 
-      <div className="container">
-        <h2 className="title">
-          Fitloop <span className="tag is-primary">Solo Maker</span>
-        </h2>
-        <h3 className="subtitle">
-          A comprehensive calisthenics training platform &mdash; workout
-          tracking, routines, videos, and social features built in.
-        </h3>
-        <div className="tags">
-          <span className="tag is-dark is-medium">Meteor</span>
-          <span className="tag is-dark is-medium">Node</span>
-          <span className="tag is-dark is-medium">Apollo</span>
-          <span className="tag is-dark is-medium">GraphQL</span>
-          <span className="tag is-dark is-medium">React</span>
-          <span className="tag is-dark is-medium">MongoDB</span>
-          <span className="tag is-dark is-medium">React Native</span>
-          <span className="tag is-dark is-medium">Bootstrap 4</span>
-        </div>
-        <a href="https://fitloop.co">
-          <img src={fitloopScreenshot} className="screenshot" />
-        </a>
+        {projects.map(p => (
+          <div className="work-item column is-full">
+            <div>
+              <h2 className="title">
+                {p.title} {p.solo && <span className="tag is-primary">Solo Maker</span>}
+              </h2>
+              <p className="subtitle">
+                {p.description}
+              </p>
+              <div className="tags">
+                {p.tags && p.tags.map(t => <span className="tag is-small">{t}</span>)}
+              </div>
+              <a href={p.link}>
+                <img src={require(`../images/${p.image}`)} className="screenshot" />
+              </a>
+            </div>
+          </div>
+
+        ))}
       </div>
     </section>
 
     <hr/>
 
-    <section class="section">
+    <section className="section">
       <div className="columns is-multiline has-text-centered">
         <div className="column is-one-third">
-          <span class="icon is-medium">
+          <span className="icon is-medium">
             <FontAwesomeIcon icon={faEnvelope} />
           </span>{" "}
           <a href="mailto:hey@shridhargupta.com">
@@ -232,7 +240,7 @@ const IndexPage = () => (
         </div>
 
         <div className="column is-one-third">
-          <span class="icon is-medium">
+          <span className="icon is-medium">
             <FontAwesomeIcon icon={faLinkedin} />
           </span>{" "}
           <a href="https://www.linkedin.com/in/shridhargupta/">
@@ -243,7 +251,7 @@ const IndexPage = () => (
         </div>
 
         <div className="column is-one-third">
-          <span class="icon is-medium">
+          <span className="icon is-medium">
             <FontAwesomeIcon icon={faGithub} />
           </span>{" "}
           <a href="https://github.com/sgup/">
@@ -254,7 +262,7 @@ const IndexPage = () => (
         </div>
 
         <div className="column is-one-third">
-          <span class="icon is-medium">
+          <span className="icon is-medium">
             <FontAwesomeIcon icon={faTwitter} />
           </span>{" "}
           <a href="https://twitter.com/shridhargupta">
@@ -265,7 +273,7 @@ const IndexPage = () => (
         </div>
 
         <div className="column is-one-third">
-          <span class="icon is-medium">
+          <span className="icon is-medium">
             <FontAwesomeIcon icon={faCamera} />
           </span>{" "}
           <a href="http://shridhartakesphotos.com">
@@ -276,7 +284,7 @@ const IndexPage = () => (
         </div>
 
         <div className="column is-one-third">
-          <span class="icon is-medium">
+          <span className="icon is-medium">
             <FontAwesomeIcon icon={faInstagram} />
           </span>{" "}
           <a href="https://instagram.com/shridhartakesphotos">

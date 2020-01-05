@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Fitloop",
+    "link": "https://fitloop.app",
+    "solo": true,
+    "image": "screely-fitloop.png",
+    "description": "Calisthenics training platform — workout tracking, routines, videos, and social features built in.",
+    "tags": [
+      "Meteor",
+      "Node",
+      "Apollo",
+      "GraphQL",
+      "React",
+      "MongoDB",
+      "React Native",
+      "Bootstrap 4"
+    ]
+  },
+  {
+    "title": "StreetGyms",
+    "link": "https://streetgyms.com",
+    "solo": true,
+    "image": "screely-streetgyms.png",
+    "description": "Map search for 8,000+ outdoor park gyms.",
+    "tags": [
+      "Next.js",
+      "React",
+      "MapBox",
+      "Google Maps",
+      "Apple Maps",
+      "MongoDB",
+      "GeoJSON"
+    ]
+  },
+  {
+    "title": "Couchsurfing Search",
+    "link": "https://couchsurfing.com",
+    "image": "screely-couchsurfing.png",
+    "description": "Dynamic react view for member search, and revamped algorithm for geographical search.",
+    "tags": [
+      "Ruby on Rails",
+      "React"
+    ]
+  },
+  {
+    "title": "Dataquest",
+    "link": "https://dataquest.io",
+    "image": "screely-dataquest.png",
+    "description": "Dark Mode for Learning UI, and migrating API calls to GraphQL.",
+    "tags": [
+      "GraphQL",
+      "React",
+      "Redux",
+      "Styled Components"
+    ]
+  },
+  {
+    "title": "Miro Health",
+    "link": "https://mirohealth.com",
+    "image": "screely-mirohealth.png",
+    "description": "Static marketing website & internal dashboard for patient data.",
+    "tags": [
+      "React",
+      "React Static",
+      "Redux",
+      "Styled Components"
+    ]
+  }
+]
