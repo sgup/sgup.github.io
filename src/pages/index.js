@@ -22,13 +22,17 @@ import couchsurfingScreenshot from "../images/screely-couchsurfing.png"
 import streetgymsScreenshot from "../images/screely-streetgyms.png"
 import mirohealthScreenshot from "../images/screely-mirohealth.png"
 
-
+import curtis from '../images/people/curtis.jpeg'
+import ben from '../images/people/ben.jpeg'
+import alli from '../images/people/alli.jpeg'
+import josh from '../images/people/josh.jpeg'
+import liz from '../images/people/liz.jpeg'
 
 import projects from './projects.json'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Shridhar Gupta - Web & Mobile App Maker" />
 
     <section>
       <div className="jumbotron container">
@@ -71,7 +75,7 @@ const IndexPage = () => (
                 >
                   StreetGyms
                 </a>
-              </b> and <a href="mailto:hey@shridhargupta.com" className="is-link has-underline underline-blue"><b>available for freelance work</b></a>.
+              </b> and <a href="mailto:hey@shridhargupta.com" className="is-link has-underline underline-blue"><b>available for consulting work</b></a> remotely &amp; in NYC.
             </p>
           </div>
 
@@ -89,7 +93,7 @@ const IndexPage = () => (
               </p>
               <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
-                  <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQE3NN8uMmo47w/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=WKxnrMd4TGMry8e1msG0cyFDmht6d63XfZSa4rRqfuY" />
+                  <img className="is-rounded" src={curtis} />
                 </figure>
                 <div className="info">
                   <a href="https://www.linkedin.com/in/curtishumphrey/" target="_blank"><b>Curtis Humphrey, Ph.D.</b></a>
@@ -107,7 +111,7 @@ const IndexPage = () => (
               </p>
               <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
-                  <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQHgFIHQ3x0Zgw/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=S7g5ZNbM9sUNTRHM0ntby55CbTPpEvjTgbwqnJ0lAqg" />
+                  <img className="is-rounded" src={ben} />
                 </figure>
                 <div className="info">
                   <a href="https://www.linkedin.com/in/benjaminleung/" target="_blank"><b>Benjamin Leung</b></a>
@@ -125,7 +129,7 @@ const IndexPage = () => (
               </p>
               <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
-                  <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQG_5cQjzpwUgA/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=hhZAkLdFzAmvblL4p7gu3qaDsi7thaRaP4ni4616kF8" />
+                  <img className="is-rounded" src={josh} />
                 </figure>
                 <div className="info">
                   <a href="https://www.linkedin.com/in/joshsperling/" target="_blank"><b>Josh Sperling</b></a>
@@ -143,7 +147,7 @@ const IndexPage = () => (
               </p>
               <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
-                  <img className="is-rounded" src="https://media.licdn.com/dms/image/C5603AQGdKaOrTXnwWQ/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=WYi65LagZBARXI3r90TQ1My_Fuaqf1LrtbkRyUJ7wRc" />
+                  <img className="is-rounded" src={alli} />
                 </figure>
                 <div className="info">
                   <a href="https://www.linkedin.com/in/allishea/" target="_blank"><b>Alli Shea</b></a>
@@ -161,7 +165,7 @@ const IndexPage = () => (
               </p>
               <p className="subtitle">
                 <figure className="image is-48x48 is-inline-block">
-                  <img className="is-rounded" src="https://media.licdn.com/dms/image/C4E03AQFeJQCxXqblvw/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=9fxMAotVgtCDQVAKq3f0W-rWOq2gYAxcp8zZBnv6LfU" />
+                  <img className="is-rounded" src={liz} />
                 </figure>
                 <div className="info">
                   <a href="https://www.linkedin.com/in/lizcormack/" target="_blank"><b>Liz Cormack</b></a>
